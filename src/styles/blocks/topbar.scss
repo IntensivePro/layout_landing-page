@@ -1,0 +1,17 @@
+.TopBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 20px;
+}
+
+.TopBar-Logo {
+  display: flex;
+  width: 152px;
+  height: 16px;
+}
+
+.TopBar-Icons {
+  display: flex;
+  gap: 24px;
+}

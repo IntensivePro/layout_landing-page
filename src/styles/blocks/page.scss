@@ -1,0 +1,27 @@
+.Page {
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: hsl(214, 21%, 13%);
+  font-size: 16px;
+  line-height: 140%;
+  scroll-behavior: smooth;
+}
+
+.Page-Body {
+  margin: 0;
+}
+
+.Page-Menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.Page-Menu:target {
+  opacity: 1;
+  pointer-events: all;
+}
