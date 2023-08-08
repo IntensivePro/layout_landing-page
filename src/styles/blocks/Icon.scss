@@ -1,17 +1,31 @@
-.TopBar-Icon {
+.Icon {
   display: block;
   height: 24px;
   width: 24px;
+  background-position: center;
+  background-size: cover;
+
+  @include hover(transform, scale(1.2));
+
+  @media (min-width: 576px) {
+    height: 32px;
+    width: 32px;
+  }
+
+  &-Phone {
+    background-image: url(../images/icons/Icon-Phone-call.svg);
+  }
+
+  &-Menu {
+    background-image: url(../images/icons/Icon-Burger-menu.svg);
+    &:hover {
+      background-image: url(../images/icons/Icon-Burger-menu-hover.svg);
+    }
+  }
+
+  &-Close {
+    background-image: url(../images/icons/Icon-Close.svg);
+  }
+
 }
 
-.TopBar-Icon--phone {
-  background-image: url(../images/icons/Icon-Phone-call.png);
-}
-
-.TopBar-Icon--menu {
-  background-image: url(../images/icons/Icon-Burger-menu.png);
-}
-
-.TopBar-Icon--close {
-  background-image: url(../images/icons/Icon-Close.png);
-}
